@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>delphi hakens</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;1,300');
+		@keyframes movebg {
+			from { transform: translate(-100vmax, 0px) }
+			to { transform: translate(0vmax, 0px) }
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			min-height: 100vh;
+			width: 100vw;
+			overflow: hidden;
+			font-family: "IBM Plex Mono";
+		}
+
+		#background {
+			/*position: absolute;*/
+			top: 0; left: 0;
+			height:	100vh;
+			width:	200vmax;
+
+			background: #FFDE17 url("assets/bg.svg") repeat;
+			background-size: 100vmax;
+
+			animation: movebg 60s linear infinite;
+		}
+
+		.text {
+			position: absolute;
+			top: 24px; left: 24px;
+			background: #fff;
+			padding: 24px;
+
+			min-width: 30%;
+			max-width: 60%;
+			width: fit-content;
+
+			min-height: 30%;
+			height: fit-content;
+
+			font-size: 12pt;
+		}
+
+		span.base {
+			font-size: 10pt;
+			padding: 25px;
+
+			position: absolute;
+			bottom: 0;
+		}
+
+		span.links { left: 0; }
+		span.options { right: 0; opacity: 0.7; }
+
+		.pronoun {
+			color: #888;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.text {
+				top: 16px; left: 16px;
+				font-size: 16pt;
+				max-width: none;
+				max-height: none;
+			}
+
+			span.base {
+				font-size: 12pt;
+				padding: 25px;
+				position: relative;
+				padding: 0px;
+				padding-top: 25px;
+			}
+
+			span.options { display: none }
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id=background></div>
+	<div class="text">
+		<i>Delphi Hakens</i> <span class="pronoun">(she/her)</span> is a designer, developer & artist based in Sydney, Australia. She works in the field of user interface design, et cetera, et cetera, I still need to pad this out...
+		<span class="base links">about &middot; design portfolio &middot; art page&nbsp;</span>
+		<span class="base options">stop background</span>
+	</div>
+</body>
+</html>
