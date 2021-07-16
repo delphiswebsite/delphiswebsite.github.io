@@ -59,10 +59,15 @@
 		}
 
 		span.links { left: 0; }
-		span.options { right: 0; opacity: 0.7; }
+		span.options { right: 0; opacity: 0.8; }
 
 		a, .pronoun {
-			color: #777;
+			color: #888;
+		}
+
+		a {
+			color: #555;
+			text-decoration: underline;
 		}
 
 		@media only screen and (max-width: 600px) {
@@ -102,8 +107,13 @@
 
 	<div class="text">
 		<i>Delphi Hakens</i> <span class="pronoun">(she/her)</span> is a designer, developer & artist based in Sydney, Australia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-		
-		<span class="base links">about &middot; design portfolio &middot; art page&nbsp;</span>
+
+		<span class="base links">
+			<a href="">design portfolio</a> &middot; 
+			<a href="">art portfolio</a> &middot;
+			<a href="//github.com/delphiswebsite/">github page</a> &middot;
+			<a href="//delphiswebsite.newgrounds.com/">newgrounds page</a>&nbsp;
+		</span>
 		<span class="base options"><a id=bgToggle onclick="toggleBG()">stop background</a>
 	</div>
 </body>
