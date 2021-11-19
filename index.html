@@ -94,27 +94,26 @@
 </head>
 <body>
 	<div id=background></div>
+	<div class="text">
+		<i>Delphi Hakens</i> <span class="pronoun">(she/her)</span> is a designer, developer & artist based in Sydney, Australia. She's worked within the HTML/CSS/JS ecosystem since she was a teenager, and has had years of experience in the C, Rust and Python programming languages, in both backend and frontend development. <br>
+		Her interests include programming language development, typeface design, and pottery.
 
+		<span class="base links">
+			<a href="https://instagram.com/lichenaut">instagram</a> &middot; 
+			<a href="https://github.com/delphiswebsite">github</a> &middot;
+			<a href="https://instagram.com/adhakens">art</a>
+		</span>
+		<span class="base options"><a id=bgToggle onclick="toggleBG()">stop background</a>
+	</div>
 	<script>
 		var bgMoves = true;
 
 		function toggleBG() {
 			bgMoves = !bgMoves;
+			// set animation speed to zero, so as not to get a jump when started again
 			document.querySelector("#background").style.animationDuration = bgMoves ? "60s" : "0s";
-			document.querySelector("#bgToggle").innerHTML = bgMoves ? "stop background" : "start background";
+			document.querySelector("#bgToggle").innerText = bgMoves ? "stop background" : "start background";
 		}
 	</script>
-
-	<div class="text">
-		<i>Delphi Hakens</i> <span class="pronoun">(she/her)</span> is a designer, developer & artist based in Sydney, Australia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-		<span class="base links">
-			<a href="">design portfolio</a> &middot; 
-			<a href="">art portfolio</a> &middot;
-			<a href="//github.com/delphiswebsite/">github page</a> &middot;
-			<a href="//delphiswebsite.newgrounds.com/">newgrounds page</a>&nbsp;
-		</span>
-		<span class="base options"><a id=bgToggle onclick="toggleBG()">stop background</a>
-	</div>
 </body>
 </html>
