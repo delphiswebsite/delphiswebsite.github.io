@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 16px;
+
+	min-height: 100%;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+
+	background-color: #FC0;
+	font-family: "Untitled Sans", system-ui, sans-serif;
+}
+
+a {
+	color: #333;
+}
+
+.page {
+	width: 75%;
+	height: 100%;
+	max-width: 9.5in;
+	
+	color: #2b2b2b;
+	background:	url("assets/ui/paper.jpg") #eee;
+	background-size: 256px;
+	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+
+	padding: 30px;
+
+	overflow: hidden;
+}
+
+.page-title {
+	font-size: 6em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+
+	padding-bottom: 24px;
+	border-bottom: 4px solid #2b2b2b;
+	margin-bottom: 24px;
+}
+
+.page-body {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.links {
+	width: 50%;
+	min-width: fit-content;
+
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-right: 16px;
+}
+
+.links-header {
+	font-size: 2em;
+}
+
+.text-title {
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.text-title::before {
+	content: "☞";
+	margin-right: 8px;
+}
+
+.text {
+	text-align: justify;
+}
+
+.footer {
+	width: 100%;
+	text-align: center;
+	margin-top: 24px;
+	opacity: 0.5;
+}
