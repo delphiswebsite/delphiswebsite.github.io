@@ -26,14 +26,38 @@ a {
 	height: 70vh;
 	
 	color: #2b2b2b;
-	background:	url("/assets/ui/paper.jpg") #eee;
-	background-size: 256px;
+	background:	url("/assets/ui/card.svg") #eee;
+	background-size: cover;
 	border-radius: 15px;
 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
 
 	padding: 30px;
 
-	overflow: hidden;
+	transform: rotateY(0deg);
+	transform-style: preserve-3d;
+
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	animation: flipcard 2s infinite;
+}
+
+.card::after {
+	content: '';
+	position: absolute;
+
+	right: 0px;
+	bottom: 0px;
+	top: 0px;
+	left: 0px;
+
+	background:	url("/assets/ui/paper.jpg") #eee;
+
+	transform: rotateY(180deg);
+	transform-style: preserve-3d;
+
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 }
 
 #strategy {
@@ -57,4 +81,9 @@ a {
 	text-align: center;
 	margin-top: 24px;
 	opacity: 0.5;
+}
+
+@keyframes flipcard {
+	0%		{ transform: rotateX(0deg); }
+	100%	{ transform: rotateX(360deg); }
 }
