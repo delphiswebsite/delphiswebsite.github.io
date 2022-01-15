@@ -22,7 +22,7 @@ const STRATEGIES = [
 	"Consider different fading systems.",
 	"Consult other sources, promising or unpromising.",
 	"Convert a melodic element into a rhythmic element.",
-	"Courage!.",
+	"Courage!",
 	"Cut a vital connection.",
 	"Decorate, decorate.",
 	"Define an area as 'safe' and use it as an anchor.",
