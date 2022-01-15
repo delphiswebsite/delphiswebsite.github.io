@@ -39,7 +39,7 @@ a {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 
-	animation: flipcard 2s infinite;
+	animation: flipcard 3s infinite;
 }
 
 .card::after {
@@ -56,7 +56,7 @@ a {
 	background:	url("/assets/ui/card.svg") #eee;
 	background-size: cover;
 
-	transform: rotateX(180deg);
+	transform: rotateY(180deg);
 	transform-style: preserve-3d;
 
 	-webkit-backface-visibility: hidden;
