@@ -51,10 +51,12 @@ a {
 	top: 0px;
 	left: 0px;
 
+	border-radius: 10px;
+
 	background:	url("/assets/ui/card.svg") #eee;
 	background-size: cover;
 
-	transform: rotateY(180deg);
+	transform: rotateX(180deg);
 	transform-style: preserve-3d;
 
 	-webkit-backface-visibility: hidden;
@@ -85,6 +87,6 @@ a {
 }
 
 @keyframes flipcard {
-	0%		{ transform: rotateX(0deg); }
-	100%	{ transform: rotateX(360deg); }
+	0%		{ transform: rotateY(0deg); }
+	100%	{ transform: rotateY(360deg); }
 }
